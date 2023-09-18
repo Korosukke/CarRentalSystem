@@ -247,11 +247,15 @@ public class Main{
         Car car2 = new Car("C002", "Audi", "R8", 7000.0);
         Car car3 = new Car("C003", "BMW", "M3", 2500.0);
         Car car4 = new Car("C004", "BMW", "X3", 4500.0);
+        Car car5 = new Car("C005", "Porsche", "911", 4500.0);
+        Car car6 = new Car("C006", "Ferrari", "Roma", 4500.0);
         
         rentalSystem.addCar(car1);
         rentalSystem.addCar(car2);
         rentalSystem.addCar(car3);
         rentalSystem.addCar(car4);
+        rentalSystem.addCar(car5);
+        rentalSystem.addCar(car6);
 
         rentalSystem.menu();
     }
