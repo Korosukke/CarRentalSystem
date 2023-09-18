@@ -183,7 +183,7 @@ class CarRentalSystem {
                     System.out.println("Customer Name: " + newCustomer.getName());
                     System.out.println("Car: " + selectedCar.getBrand() + " " + selectedCar.getModel());
                     System.out.println("Rental Days: " + rentalDays);
-                    System.out.printf("Total Price: $%.2f%n", totalPrice);
+                    System.out.printf("Total Price: Rs. %.2f%n", totalPrice);
 
                     System.out.print("\nConfirm rental (Y/N): ");
                     String confirm = scanner.nextLine();
@@ -243,12 +243,15 @@ public class Main{
     public static void main(String[] args) {
         CarRentalSystem rentalSystem = new CarRentalSystem();
 
-        Car car1 = new Car("C001", "Toyota", "Camry", 60.0); // Different base price per day for each car
-        Car car2 = new Car("C002", "Honda", "Accord", 70.0);
-        Car car3 = new Car("C003", "Mahindra", "Thar", 150.0);
+        Car car1 = new Car("C001", "Tesla", "Model X", 6000.0);
+        Car car2 = new Car("C002", "Audi", "R8", 7000.0);
+        Car car3 = new Car("C003", "BMW", "M3", 2500.0);
+        Car car4 = new Car("C004", "BMW", "X3", 4500.0);
+        
         rentalSystem.addCar(car1);
         rentalSystem.addCar(car2);
         rentalSystem.addCar(car3);
+        rentalSystem.addCar(car4);
 
         rentalSystem.menu();
     }
